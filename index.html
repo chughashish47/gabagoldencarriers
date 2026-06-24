@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaba Golden Carriers Pvt. Ltd. | Pan-India Transport &amp; Logistics Since 1985</title>
+<meta name="description" content="Gaba Golden Carriers Private Limited - Faridabad based transport &amp; logistics company since 1985. 85+ truck fleet, container transport, bike transport, pan-India FTL services trusted by Hero MotoCorp, Honda, Bajaj &amp; Ola Electric.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== Preloader ===== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-truck">
+    <svg viewBox="0 0 64 40" width="64" height="40"><use href="#icon-truck"></use></svg>
+  </div>
+</div>
+
+<!-- ===== Sprite sheet (inline icons) ===== -->
+<svg style="display:none">
+  <symbol id="icon-truck" viewBox="0 0 64 40">
+    <path d="M2 26V10a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M34 16h12l9 8v2h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M2 26h53" stroke="currentColor" stroke-width="2.5"/>
+    <circle cx="14" cy="29" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <circle cx="46" cy="29" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M40 16v8" stroke="currentColor" stroke-width="2.5"/>
+  </symbol>
+  <symbol id="icon-container" viewBox="0 0 48 48">
+    <rect x="4" y="12" width="40" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M4 20h40M4 28h40M16 12v24M32 12v24" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="icon-route" viewBox="0 0 48 48">
+    <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <circle cx="38" cy="38" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M10 14c0 14 28 6 28 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 4"/>
+  </symbol>
+  <symbol id="icon-bike" viewBox="0 0 48 48">
+    <circle cx="12" cy="34" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <circle cx="36" cy="34" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M12 34l8-16h8l8 16M20 18l6-6h6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 48 48">
+    <path d="M24 4l16 6v12c0 12-8 18-16 22-8-4-16-10-16-22V10z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M16 24l6 6 10-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-clock" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M24 14v10l8 5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-map" viewBox="0 0 48 48">
+    <path d="M24 4c-7.7 0-14 6.3-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.7-6.3-14-14-14z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="24" cy="18" r="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.5 2.5.8 3.9.8.6 0 1 .4 1 1v3.4c0 .6-.4 1-1 1C10.5 21.2 2.8 13.5 2.8 4.7c0-.6.4-1 1-1H7.2c.6 0 1 .4 1 1 0 1.4.3 2.7.8 3.9.2.3.1.7-.2 1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+    <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M8.5 8.3c.2-.6.7-.5 1.1-.5.3 0 .5.1.6.4.2.5.7 1.6.7 1.8.1.2 0 .4-.1.5l-.5.5c-.1.2-.1.3 0 .5.4.8 1.7 2 2.7 2.4.2.1.4.1.5-.1l.6-.6c.2-.2.3-.2.5-.1l1.7.9c.2.1.3.3.3.5 0 .5-.5 1.6-1.5 1.9-1.2.4-2.7 0-4.5-1.7-1.7-1.6-2.6-3.1-2.7-4.4-.1-.7.1-1.5.6-2z" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24">
+    <rect x="2.5" y="5" width="19" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    <path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <path d="M12 2l3 7 7 .6-5.3 4.6L18.5 22 12 17.8 5.5 22l1.8-7.8L2 9.6 9 9z" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-award" viewBox="0 0 48 48">
+    <circle cx="24" cy="18" r="11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M17 27l-4 13 11-5 11 5-4-13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M19 18l3.5 3.5L29 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-fmcg" viewBox="0 0 48 48">
+    <rect x="14" y="6" width="20" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+    <path d="M20 6V3h8v3M14 18h20M14 28h20" stroke="currentColor" stroke-width="2.2"/>
+  </symbol>
+  <symbol id="icon-retail" viewBox="0 0 48 48">
+    <path d="M8 16l3-10h26l3 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M8 16v24h32V16M18 22a6 6 0 0 0 12 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-industrial" viewBox="0 0 48 48">
+    <path d="M6 42V20l9 6V20l9 6V20l9 6V14l9 6v22z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M6 42h36" stroke="currentColor" stroke-width="2.5"/>
+  </symbol>
+  <symbol id="icon-inbound" viewBox="0 0 48 48">
+    <path d="M24 6v26m0 0l-9-9m9 9l9-9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 36h32v6H8z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24">
+    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24">
+    <path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-up" viewBox="0 0 24 24">
+    <path d="M12 19V6M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24">
+    <path d="M12 2c-4 0-7 3.1-7 7 0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3-7-7-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    <circle cx="12" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+  </symbol>
+</svg>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark"><svg width="26" height="26"><use href="#icon-truck"></use></svg></span>
+      <span class="brand-text">
+        <strong>Gaba Golden Carriers</strong>
+        <small>Pvt. Ltd. &middot; Est. 1985</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#clients">Clients</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+918047313501" class="header-call">
+        <svg width="16" height="16"><use href="#icon-phone"></use></svg>
+        +91 80473 13501
+      </a>
+      <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="24" height="24"><use href="#icon-menu"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-road"></div>
+      <svg class="hero-truck-anim" viewBox="0 0 64 40" width="120"><use href="#icon-truck"></use></svg>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow"><svg width="14" height="14"><use href="#icon-shield"></use></svg> 40+ Years &middot; Pan-India &middot; GST Registered</span>
+        <h1>Reliable Transport &amp; Logistics, <span class="text-gold">Delivered On Time.</span></h1>
+        <p>Since 1985, Gaba Golden Carriers Private Limited has moved India's automobiles, FMCG and industrial goods safely &mdash; with a fleet of 85+ trucks covering 6 million+ km Pan-India.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Request a Quote <svg width="16" height="16"><use href="#icon-arrow"></use></svg></a>
+          <a href="tel:+918047313501" class="btn btn-outline btn-lg">
+            <svg width="16" height="16"><use href="#icon-phone"></use></svg> Call Now
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="num" data-count="41">0</span><span class="suffix">+</span>
+            <small>Years of Service</small>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="85">0</span><span class="suffix">+</span>
+            <small>Truck Fleet</small>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="6">0</span><span class="suffix">M+</span>
+            <small>Km Covered</small>
+          </div>
+          <div class="hero-stat">
+            <span class="num" data-count="5">0</span><span class="suffix">.0&#9733;</span>
+            <small>Customer Rating</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">About Us</span>
+        <h2>Four Decades of Moving India Forward</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Established in <strong>1985</strong> in Faridabad, Haryana by <strong>Mr. Varinder Gaba</strong> (Managing Director), with <strong>Mr. Darshan Gaba</strong> joining as Director in 1999, Gaba Golden Carriers Private Limited was built to provide excellent logistics solutions &mdash; assuring in-time, safe delivery of goods, every time.</p>
+          <p>It is our endeavour to serve our customers with unparalleled speed, safety and customised service. We intend to exceed our customers' expectations, every single trip.</p>
+          <ul class="about-checklist">
+            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> GST Registered Limited Company</li>
+            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> 11&ndash;25 dedicated logistics professionals</li>
+            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Trusted by leading two-wheeler &amp; FMCG brands</li>
+            <li><svg width="18" height="18"><use href="#icon-check"></use></svg> Pan-India door-to-door full truck load service</li>
+          </ul>
+        </div>
+        <div class="about-cards reveal">
+          <div class="value-card">
+            <div class="value-icon"><svg width="28" height="28"><use href="#icon-route"></use></svg></div>
+            <h3>Our Vision</h3>
+            <p>To operate an innovative and disciplined logistics company by adopting the latest business practices, policies and technology to meet our customers' requirements.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><svg width="28" height="28"><use href="#icon-shield"></use></svg></div>
+            <h3>Our Mission</h3>
+            <p>Provide logistics services with safe and on-time deliveries, while maintaining a safe workplace and upholding integrity, fairness and honesty with every customer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">What We Offer</span>
+        <h2>Our Transport &amp; Logistics Services</h2>
+        <p>Customised, full truck load and door-to-door solutions &mdash; built around our clients' needs.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-container"></use></svg></div>
+          <h3>32 Feet Closed Body High Qube Container Transport</h3>
+          <p>Full truck load, door-to-door container transport for high-volume cargo via road, nationwide.</p>
+          <div class="service-tags"><span>FTL</span><span>Door-to-Door</span><span>Road</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-container"></use></svg></div>
+          <h3>Close Body Container Truck Service</h3>
+          <p>Secure, weather-protected closed-body container trucking for sensitive and high-value goods.</p>
+          <div class="service-tags"><span>FTL</span><span>Road</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-route"></use></svg></div>
+          <h3>Interstate Container Truck Service</h3>
+          <p>Reliable cross-state container haulage, keeping your supply chain moving across borders.</p>
+          <div class="service-tags"><span>FTL</span><span>Door-to-Door</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-container"></use></svg></div>
+          <h3>Commercial Close Body Container Truck Service</h3>
+          <p>Dedicated commercial-grade container trucking tailored for business and bulk distribution needs.</p>
+          <div class="service-tags"><span>FTL</span><span>Road</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-map"></use></svg></div>
+          <h3>Pan India Container Body Truck Transport</h3>
+          <p>End-to-end, nationwide container body truck transport with full door-to-door coverage.</p>
+          <div class="service-tags"><span>FTL</span><span>Pan-India</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-bike"></use></svg></div>
+          <h3>Bike Transport Service</h3>
+          <p>Specialised two-wheeler transport in trucking cubes, with Pan-India service coverage.</p>
+          <div class="service-tags"><span>Pan-India</span><span>Two-Wheelers</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="30" height="30"><use href="#icon-container"></use></svg></div>
+          <h3>34 Ft Container Single Axle Truck Transport</h3>
+          <p>Single-axle, 34 ft container trucking offering an efficient option for mid-volume freight.</p>
+          <div class="service-tags"><span>FTL</span><span>Road</span></div>
+        </div>
+
+        <div class="service-card service-card-cta reveal">
+          <h3>Need a custom logistics solution?</h3>
+          <p>Tell us your route, load and timeline &mdash; we'll tailor a transport plan for you.</p>
+          <a href="#contact" class="btn btn-primary btn-sm">Talk to Us <svg width="14" height="14"><use href="#icon-arrow"></use></svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sectors ===== -->
+  <section class="sectors">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Industries Served</span>
+        <h2>Sectors We Cater To</h2>
+      </div>
+      <div class="sectors-grid reveal">
+        <div class="sector-item">
+          <svg width="32" height="32"><use href="#icon-bike"></use></svg>
+          <span>Two Wheeler Automobiles</span>
+        </div>
+        <div class="sector-item">
+          <svg width="32" height="32"><use href="#icon-inbound"></use></svg>
+          <span>Inbound &amp; Outbound Logistics</span>
+        </div>
+        <div class="sector-item">
+          <svg width="32" height="32"><use href="#icon-fmcg"></use></svg>
+          <span>FMCG</span>
+        </div>
+        <div class="sector-item">
+          <svg width="32" height="32"><use href="#icon-retail"></use></svg>
+          <span>Retail</span>
+        </div>
+        <div class="sector-item">
+          <svg width="32" height="32"><use href="#icon-industrial"></use></svg>
+          <span>Industrial Goods</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Fleet / Stats ===== -->
+  <section class="fleet" id="fleet">
+    <div class="container fleet-inner">
+      <div class="fleet-text reveal">
+        <span class="tag tag-light">Our Fleet</span>
+        <h2>A Fleet Built for Scale &amp; Reliability</h2>
+        <p>Our fleet of 85 trucks distributes roughly 1.2 lakh units of two-wheelers, covering over 6 million km of distance Pan-India &mdash; backed by a disciplined operations team committed to on-time, damage-free delivery.</p>
+        <a href="#contact" class="btn btn-outline-light btn-md">Partner With Our Fleet <svg width="16" height="16"><use href="#icon-arrow"></use></svg></a>
+      </div>
+      <div class="fleet-stats reveal">
+        <div class="fleet-stat">
+          <span class="num" data-count="85">0</span><span class="suffix">+</span>
+          <small>Trucks in Fleet</small>
+        </div>
+        <div class="fleet-stat">
+          <span class="num" data-count="1.2">0</span><span class="suffix">L+</span>
+          <small>Two-Wheeler Units Moved</small>
+        </div>
+        <div class="fleet-stat">
+          <span class="num" data-count="6">0</span><span class="suffix">M+</span>
+          <small>Km Covered Pan-India</small>
+        </div>
+        <div class="fleet-stat">
+          <span class="num" data-count="11">0</span><span class="suffix">-25</span>
+          <small>Logistics Professionals</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Clients ===== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Our Clientele</span>
+        <h2>Trusted by Industry Leaders</h2>
+      </div>
+    </div>
+    <div class="clients-marquee reveal">
+      <div class="marquee-track">
+        <span>Hero MotoCorp</span>
+        <span>Honda Motorcycle &amp; Scooter India</span>
+        <span>Bajaj Auto Ltd.</span>
+        <span>Ola Electric</span>
+        <span>FSC</span>
+        <span>Godrej &amp; Boyce</span>
+        <span>Hero MotoCorp</span>
+        <span>Honda Motorcycle &amp; Scooter India</span>
+        <span>Bajaj Auto Ltd.</span>
+        <span>Ola Electric</span>
+        <span>FSC</span>
+        <span>Godrej &amp; Boyce</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Awards ===== -->
+  <section class="awards" id="awards">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Recognition</span>
+        <h2>Awards &amp; Recognition</h2>
+      </div>
+      <div class="awards-timeline reveal">
+        <div class="award-item">
+          <div class="award-icon"><svg width="24" height="24"><use href="#icon-award"></use></svg></div>
+          <div>
+            <strong>2010&ndash;2011 &amp; 2011&ndash;2012</strong>
+            <p>Excellent Performance Award &mdash; HONDA Central Region Transporter</p>
+          </div>
+        </div>
+        <div class="award-item">
+          <div class="award-icon"><svg width="24" height="24"><use href="#icon-award"></use></svg></div>
+          <div>
+            <strong>2013&ndash;2014</strong>
+            <p>Excellent Performance Award &mdash; HONDA Central Region Transporter</p>
+          </div>
+        </div>
+        <div class="award-item">
+          <div class="award-icon"><svg width="24" height="24"><use href="#icon-award"></use></svg></div>
+          <div>
+            <strong>2017</strong>
+            <p>Central Region Best Logistics Partner &mdash; HONDA Central Region</p>
+          </div>
+        </div>
+        <div class="award-item">
+          <div class="award-icon"><svg width="24" height="24"><use href="#icon-award"></use></svg></div>
+          <div>
+            <strong>2018</strong>
+            <p>Central Region Best Transporter &mdash; HONDA Central Region</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Client Reviews</span>
+        <h2>What Our Customers Say</h2>
+        <div class="rating-badge">
+          <svg width="18" height="18"><use href="#icon-star"></use></svg>
+          <span>5.0 / 5.0</span> &middot; based on verified IndiaMART reviews
+        </div>
+      </div>
+      <div class="testi-track reveal">
+        <div class="testi-card">
+          <div class="stars"><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg></div>
+          <p>"Reliable service for our Close Body Container Truck requirement. Smooth experience end to end."</p>
+          <strong>Rajender Meghwal</strong>
+          <small>Raipur, Chhattisgarh &middot; Apr 2023</small>
+        </div>
+        <div class="testi-card">
+          <div class="stars"><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg></div>
+          <p>"Consistent, on-time deliveries every time. A dependable transport partner."</p>
+          <strong>Lohchub Honda</strong>
+          <small>Rohtak, Haryana &middot; Apr 2022</small>
+        </div>
+        <div class="testi-card">
+          <div class="stars"><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg><svg width="16" height="16"><use href="#icon-star"></use></svg></div>
+          <p>"Over a decade of awards from HONDA speaks for itself &mdash; safe, disciplined fleet operations."</p>
+          <strong>Verified Partner</strong>
+          <small>HONDA Central Region</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Banner ===== -->
+  <section class="cta-banner">
+    <div class="container cta-inner reveal">
+      <h2>Ready to Move Your Cargo, On Time, Every Time?</h2>
+      <p>Get in touch for a customised freight quote across any route in India.</p>
+      <div class="cta-actions">
+        <a href="tel:+918047313501" class="btn btn-primary btn-lg"><svg width="16" height="16"><use href="#icon-phone"></use></svg> Call +91 80473 13501</a>
+        <a href="https://wa.me/918047313501" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg"><svg width="16" height="16"><use href="#icon-whatsapp"></use></svg> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Get In Touch</span>
+        <h2>Request a Freight Quote</h2>
+        <p>Share your route and load details &mdash; our team will respond with a tailored quote.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 00000 00000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="route">Route (From &rarr; To)</label>
+              <input type="text" id="route" name="route" placeholder="e.g. Faridabad &rarr; Mumbai">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select id="service" name="service">
+                <option>32 Feet Closed Body Container Transport</option>
+                <option>Close Body Container Truck Service</option>
+                <option>Interstate Container Truck Service</option>
+                <option>Commercial Close Body Container Truck Service</option>
+                <option>Pan India Container Body Truck Transport</option>
+                <option>Bike Transport Service</option>
+                <option>34 Ft Container Single Axle Truck Transport</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your load, weight, and timeline"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Send Request <svg width="16" height="16"><use href="#icon-arrow"></use></svg></button>
+          <p class="form-success" id="formSuccess">
+            <svg width="18" height="18"><use href="#icon-check"></use></svg>
+            Thank you! Your request has been noted &mdash; please call us directly for the fastest response.
+          </p>
+        </form>
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <svg width="22" height="22"><use href="#icon-pin"></use></svg>
+            <div><strong>Registered Office</strong><p>Faridabad, Haryana, India</p></div>
+          </div>
+          <div class="info-card">
+            <svg width="22" height="22"><use href="#icon-phone"></use></svg>
+            <div><strong>Call Us</strong><p><a href="tel:+918047313501">+91 80473 13501</a></p></div>
+          </div>
+          <div class="info-card">
+            <svg width="22" height="22"><use href="#icon-whatsapp"></use></svg>
+            <div><strong>WhatsApp</strong><p><a href="https://wa.me/918047313501" target="_blank" rel="noopener">Chat with us</a></p></div>
+          </div>
+          <div class="info-card">
+            <svg width="22" height="22"><use href="#icon-clock"></use></svg>
+            <div><strong>Working Hours</strong><p>Mon &ndash; Sat: 9:00 AM &ndash; 7:00 PM</p></div>
+          </div>
+          <div class="map-embed">
+            <iframe title="Faridabad, Haryana map" src="https://www.google.com/maps?q=Faridabad,Haryana&output=embed" width="100%" height="220" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-mark"><svg width="24" height="24"><use href="#icon-truck"></use></svg></span>
+        <span class="brand-text"><strong>Gaba Golden Carriers</strong><small>Pvt. Ltd.</small></span>
+      </a>
+      <p>Pan-India transport &amp; logistics company, operating since 1985 from Faridabad, Haryana &mdash; trusted by leading automobile and FMCG brands.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#fleet">Our Fleet</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Container Truck Transport</a>
+      <a href="#services">Interstate Logistics</a>
+      <a href="#services">Bike Transport</a>
+      <a href="#services">Pan-India FTL</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+918047313501"><svg width="14" height="14"><use href="#icon-phone"></use></svg> +91 80473 13501</a>
+      <a href="https://wa.me/918047313501" target="_blank" rel="noopener"><svg width="14" height="14"><use href="#icon-whatsapp"></use></svg> WhatsApp</a>
+      <span><svg width="14" height="14"><use href="#icon-pin"></use></svg> Faridabad, Haryana, India</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>&copy; <span id="year"></span> Gaba Golden Carriers Private Limited. All rights reserved.</span>
+      <span>HSN 996511 &middot; Road Transport Services</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20"><use href="#icon-up"></use></svg>
+</button>
+
+<a href="https://wa.me/918047313501" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
